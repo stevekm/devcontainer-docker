@@ -1,0 +1,10 @@
+{
+  "name": "Container with Docker",
+  "build": { "dockerfile": "Dockerfile" },
+  "postStartCommand": "sudo service docker start || sudo systemctl start docker",
+  "runArgs": [
+    "--privileged"
+  ],
+  "features": {
+  }
+}
